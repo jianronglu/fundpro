@@ -1,0 +1,46 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+
+h3 {
+    margin-left: 15px;
+}
+.top_search_words {
+    padding: 8px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 8px;
+        border: lightgray 1px solid;
+        color: #999;
+    }
+    .query {
+        color: #666;
+        font-size: 15px;
+    }
+    .display_query {
+        color: #999;
+        font-size: 13px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: gray;
+        transform: scaleY(0.5);
+    }
+}
